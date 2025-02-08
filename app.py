@@ -16,11 +16,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-
-# Initialize embeddings
 embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
-# Streamlit UI setup
 st.title("PDF Q&A Chatbot")
 st.write("Upload PDFs and chat with the PDF / Ask questions.")
 
